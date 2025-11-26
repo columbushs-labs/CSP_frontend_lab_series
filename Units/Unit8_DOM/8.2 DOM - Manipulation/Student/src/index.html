@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>8.2 – DOM Manipulation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>8.2 – DOM Manipulation</h1>
+    <p class="subtitle">
+      Use JavaScript to create, update, and remove elements, attributes, and event handlers.
+    </p>
+
+    <section id="question-section" class="card">
+      <p id="paragraph">What is your name?</p>
+      <a href="#" id="google-link" class="link">Google</a>
+    </section>
+
+    <section id="content" class="card">
+      <h2 id="title">Guest List</h2>
+      <ul id="item-list"></ul>
+      <div class="controls">
+        <label for="guest-name">Name</label>
+        <input id="guest-name" name="guest-name" type="text" placeholder="Type a name..." />
+        <button id="add-item-button">Add guest</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Friend Tags</h2>
+      <ul class="list" id="friend-list">
+        <li>Ana</li>
+        <li>Alex</li>
+        <li>Mat</li>
+      </ul>
+      <p class="hint-small">
+        Later you will make each name removable by clicking it.
+      </p>
+    </section>
+
+    <p class="hint">
+      💡 Open DevTools → Console and follow the TODOs in <code>Lab8_2_DOMManipulation.js</code>.
+      Watch the page update as you manipulate the DOM.
+    </p>
+  </main>
+  <script src="Lab8_2_DOMManipulation.js"></script>
+</body>
+</html>

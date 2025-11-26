@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>8.1 – DOM Intro & Selectors</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>8.1 – DOM Intro &amp; Selectors</h1>
+    <p class="subtitle">
+      Use JavaScript to select, inspect, and update the elements on this page.
+    </p>
+
+    <section id="playground">
+      <h2 id="title">DOM Playground</h2>
+      <p class="description">These elements are here for you to practice <code>getElementById</code>, <code>querySelector</code>, and more.</p>
+
+      <div id="cat" class="animal card">
+        <h3>Cat</h3>
+        <p class="animal-description">I am a cat card. Change my text and style from JS!</p>
+      </div>
+
+      <div class="mouse card small-box">
+        <h3>Mouse 1</h3>
+        <p class="animal-description">I am mouse #1.</p>
+      </div>
+      <div class="mouse card small-box">
+        <h3>Mouse 2</h3>
+        <p class="animal-description">I am mouse #2.</p>
+      </div>
+      <div class="mouse card small-box featured">
+        <h3>Mouse 3</h3>
+        <p class="animal-description">I am mouse #3 (featured).</p>
+      </div>
+
+      <div class="color-grid">
+        <div class="color-box" data-color="red"></div>
+        <div class="color-box" data-color="green"></div>
+        <div class="color-box" data-color="blue"></div>
+        <div class="color-box" data-color="purple"></div>
+      </div>
+
+      <button id="highlight-btn">Highlight All Cards</button>
+      <button id="reset-btn">Reset Styles</button>
+    </section>
+
+    <p class="hint">
+      💡 Open DevTools → Console. Many tasks will ask you to log selections and then
+      update the page visually.
+    </p>
+  </main>
+  <script src="Lab8_1_DOMIntroSelectors.js"></script>
+</body>
+</html>

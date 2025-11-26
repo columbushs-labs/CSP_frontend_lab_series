@@ -19,6 +19,13 @@ function sayHelloWorld() {
 sayHelloWorld();
 ```
 
+```
+1. sayHelloWorld
+2. none
+3. console.log("Hello world")
+4. sayHelloWorld();
+```
+
 2.
 ```js
 function sayHello(name) {
@@ -27,6 +34,14 @@ function sayHello(name) {
 
 sayHello("Mary");
 sayHello("John");
+```
+
+```
+  1. sayHello
+  2. name
+  3. console.log(`Hello ${name}`)
+  4. sayHello("Mary");
+  4. sayHello("John");
 ```
 
 3.
