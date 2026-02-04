@@ -8,17 +8,6 @@ By the end of this lab, I can…
 - add, update, and delete properties in an object
 - list keys/values and iterate through an object’s properties
 
-## 🧠 Discovery + Predict (Before Coding)
-- **Discovery Question:** If you were building a *library app*, how would you store **one user** and the **books they have checked out** without making 10 separate variables?
-- **Task Question:** Predict the output (don’t run it yet):
-  ```js
-  const person = { name: "Ava", age: 16 };
-  const key = "name";
-  console.log(person[key]);
-  console.log(person.key);
-  ```
-  Write your prediction and *why*.
-
 ## 📖 Pre‑Lab Reading
 - Read: `3_1_JS_Objects.pdf`
 - While reading, highlight:
