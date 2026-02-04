@@ -1,45 +1,37 @@
-# 3.1 JS Objects – Worksheet
-## Pseudocode Practice
+# Pseudocode Practice – Library Registry (Lab 3.1)
 
-Write pseudocode (plain English steps) for each problem.
+You are building a tiny library tracker.
 
----
+## Goal
+Model:
+- A **user** with `name` and `id`
+- A set of **books** with `title`, `author`, `isbn`, `category`
+- A **library** that stores users
+- A way to print a clean summary
 
-### 1. describeStudent(student)
+## Write your plan (pseudocode)
 
-Goal: Given a student object with firstName, lastName, and id, print a message with all three.
+### Part A — Data Setup
+1) Create a user object:
+- ___________________________________________________________
+- ___________________________________________________________
 
+2) Create 2 book objects:
+- ___________________________________________________________
+- ___________________________________________________________
 
+3) Add an array of books onto the user:
+- ___________________________________________________________
 
----
+4) Create the library array and add the user:
+- ___________________________________________________________
 
-### 2. addOlympicRecord(olympicRecords, key, value)
+### Part B — Update the System
+5) Create a third book and add it through the library → user → books:
+- ___________________________________________________________
 
-Goal: Add a new key–value pair to the olympicRecords object.
-
-
-
----
-
-### 3. updateRecord(olympicRecords, key, newValue)
-
-Goal: Update an existing record’s value in the olympicRecords object.
-
-
-
----
-
-### 4. hasProperty(object, key)
-
-Goal: Check if the key exists in the object using the `in` operator and return true/false.
-
-
-
----
-
-### 5. listKeysAndValues(object)
-
-Goal: Print all keys and values in the format `key: value` using a `for...in` loop.
-
-
-
+### Part C — Output
+6) Print a summary using loops (no hardcoding):
+- ___________________________________________________________
+- ___________________________________________________________
+- ___________________________________________________________

@@ -1,227 +1,77 @@
-# 3.1 JS Objects – Lab
+# Lab 3.1 – JavaScript Objects
 
-In this lab, you will practice working with **objects** in JavaScript, based on the lesson **3.1 JS | Data Types in JavaScript – Objects**.
+## 🎯 Learning Goals
+By the end of this lab, I can…
+- explain **key → value** relationships in objects
+- create objects using **object literal syntax**
+- access properties using **dot** and **bracket** notation
+- add, update, and delete properties in an object
+- list keys/values and iterate through an object’s properties
 
-You will:
+## 🧠 Discovery + Predict (Before Coding)
+- **Discovery Question:** If you were building a *library app*, how would you store **one user** and the **books they have checked out** without making 10 separate variables?
+- **Task Question:** Predict the output (don’t run it yet):
+  ```js
+  const person = { name: "Ava", age: 16 };
+  const key = "name";
+  console.log(person[key]);
+  console.log(person.key);
+  ```
+  Write your prediction and *why*.
 
-- Understand **key–value pairs** and why objects are useful
-- Declare objects using **object literal syntax**
-- Access properties with **dot notation** and **bracket notation**
-- Add, update, and delete properties
-- Check if a property exists with the `in` operator
-- Use `Object.keys`, `Object.values`, and `for...in` to list properties
-
----
-
-## 🎯 Learning Goals (I can…)
-
-- I can explain what a key–value pair is and how it relates to objects.
-- I can create and initialize an object using curly braces `{ }`.
-- I can access and update properties using both dot and bracket notations.
-- I can add and remove properties from an object.
-- I can list an object’s keys and values using built-in methods and loops.
-
----
-
-## 📖 Pre-Lab
-
-1. Read **3.1 JS | Objects**.
-2. Complete the worksheets in this order:
-   - `GuidedPractice.md`
-   - `VocabularyWorksheet.md`
-   - `PseudocodePractice.md`
-   - `MultipleObjectsPractice.md`
-   - `MiniFRQ_Practice.md`
-
-These worksheets are designed to **build up to the lab** so that the coding feels like the final step, not the first.
-
----
+## 📖 Pre‑Lab Reading
+- Read: `3_1_JS_Objects.pdf`
+- While reading, highlight:
+  - when bracket notation is required
+  - how to add/update/delete properties
+  - one example you could reuse in a real app
 
 ## 🧰 Setup
+1. Open the `src/` folder.
+2. Open `index.html` in Chrome.
+3. Open DevTools → **Console**.
+4. Edit only: `src/Lab3_1_JSObjects.js`
+5. Refresh the page to re-run your code.
 
-1. Open VS Code and navigate to:
+## 📝 Tasks
+### Part A — Object Basics
+1. Create a `student` object with **3 properties** (string, number, boolean).
+2. Log the entire object.
+3. Log each property using **dot** and **bracket** notation.
+4. Add a new property using **bracket** notation only.
 
-   ```bash
-   3.1 - JS Objects/Student_Version/3.1_JS_Objects
-   ```
+### Part B — Brackets When Keys Are Variables
+5. Use a variable key (given in the file) to access a property correctly.
+6. Create a property with a space in the key (example: `"best class"`) and access it.
 
-2. Open the `src` folder and then:
+### Part C — Update, Delete, and Check Existence
+7. Update one value in your object and show **before/after**.
+8. Use the `in` operator to test whether a property exists.
+9. Delete a property and verify it’s gone.
 
-   - Edit your JavaScript in: `src/Lab3_1_JSObjects.js`
-   - Open `src/index.html` in your browser.
+### Part D — Listing + Iteration
+10. Create an `olympicRecords` object with at least **3 properties**.
+11. Log `Object.keys(...)` and `Object.values(...)`.
+12. Use a `for...in` loop to print `key -> value`.
 
-3. Open the browser console:
+### Part E — Mini Project: Library Registry
+13. Build the mini library system in the JS file using the iteration steps.
+14. **Bonus:** Print a clean summary using loops (no hardcoding).
 
-   - Right-click in the page → **Inspect** → **Console**.
-   - Refresh after changes to rerun your code.
-
-> ✅ **Only edit:** `src/Lab3_1_JSObjects.js` and the student worksheets in `worksheets/`.
-
----
-
-## 📝 Lab Tasks – One Bite at a Time
-
-### 🧩 Task 1 – Your First Object
-
-1. Create an object called `student` with at least these properties:
-   - `firstName` (string)
-   - `lastName` (string)
-   - `id` (number)
-
-2. Log the full `student` object.
-3. Log just the `firstName` and `id` using **dot notation**.
-
----
-
-### 🧩 Task 2 – Key–Value Pairs and Bracket Notation
-
-1. Add a new property `favoriteSubject` to `student` using **dot notation**.
-2. Add a new property `"favorite sport"` (note the space!) using **bracket notation**.
-3. Log both values to the console.
-
-Example:
-
-```js
-student["favorite sport"] = "basketball";
-console.log(student["favorite sport"]);
-```
-
-Add a comment explaining **when** bracket notation is required.
-
----
-
-### 🧩 Task 3 – Updating Values
-
-1. Change `student.favoriteSubject` to a different subject.
-2. Change `"favorite sport"` to a different sport.
-3. Log the `student` object before and after the updates to see the change.
-
----
-
-### 🧩 Task 4 – Does a Property Exist?
-
-Using the `in` operator:
-
-1. Check if `"firstName"` is in `student`.
-2. Check if `"age"` is in `student`.
-3. Log the result of each check.
-
-Example:
-
-```js
-console.log("firstName" in student); // true or false
-```
-
-Add a short comment explaining what the `in` operator does.
-
----
-
-### 🧩 Task 5 – Delete a Property
-
-1. Add a temporary property `nickname` to `student`.
-2. Log the object.
-3. Use the `delete` operator to remove `nickname` from the object.
-4. Log the object again to confirm it has been removed.
-
-Example:
-
-```js
-delete student.nickname;
-```
-
----
-
-### 🧩 Task 6 – Objects of Olympic Records
-
-1. Create an object `olympicRecords` based on the lesson:
-
-   - `athletics100Men: "Usain Bolt"`
-   - `athleticsLongJumpMen: "Mike Powel"`
-   - `swimming200Men: "Michael Phelps"`
-   - `swimming400Women: "Katie Ledecky"`
-
-2. Log the full object.
-3. Access **two properties with dot notation** and **two with bracket notation**.
-
----
-
-### 🧩 Task 7 – Updating and Adding Olympic Records
-
-1. Update `athletics100Men` to `"Justin Gatlin"` and then back to `"Usain Bolt"`.
-2. Add a new property `gymnasticsAllAroundWomen` with any champion name you like.
-3. Log the updated object.
-
----
-
-### 🧩 Task 8 – Listing Keys and Values
-
-Using your `olympicRecords` object:
-
-1. Use `Object.keys(olympicRecords)` and log the result.
-2. Use `Object.values(olympicRecords)` and log the result.
-3. Use a `for...in` loop to log each key and its value in the format:
-   - `"athletics100Men: Usain Bolt"`
-
----
-
-### 🧩 Task 9 – Library, Users, and Books (Mini Project)
-
-We’ll model the **Public Library** example from the reading.
-
-1. Create a `user` object with:
-   - `id` (number)
-   - `name` (string)
-   - `books` (array, start as empty: `[]`)
-
-2. Create two `book` objects with:
-   - `title`
-   - `author`
-   - `isbn`
-   - `category`
-
-3. Add both books into `user.books`.
-
-4. Create a `library` array and add the `user` object to it.
-
-5. Log:
-   - the full `library`
-   - `library[0].name`
-   - the titles of all books that the first user has.
-
-Hint:
-
-```js
-for (let i = 0; i < library[0].books.length; i++) {
-  console.log(library[0].books[i].title);
-}
-```
-
----
-
-## 🚀 Stretch Goals (Optional)
-
-- Add another user with different books to the `library` array.
-- Write a function `printLibrary(library)` that prints each user and the titles of their books.
-- Use `for...in` or `Object.keys` inside `printLibrary` to dynamically print properties of each book.
-
----
+## 🚀 Stretch Goals
+- Add a **second user** to the library and print both summaries.
+- Add a `checkedOutDate` to each book and include it in the output.
+- Use `Object.keys()` to print all properties of a book object.
 
 ## 🎟 Exit Ticket
-
-Answer briefly:
-
-1. What is a **key–value pair** in your own words?
-2. When do you need to use **bracket notation** instead of dot notation?
-3. Why might you want to use `Object.keys` or `Object.values` on a large object?
-
----
+Answer the Exit Ticket questions at the bottom of your JS file.
 
 ## ✅ Submission Checklist
+- [ ] My JS file runs with no errors
+- [ ] I used both dot and bracket notation correctly
+- [ ] I used `in`, `delete`, and `for...in`
+- [ ] I completed the Library Registry mini project
+- [ ] I answered the Exit Ticket
 
-- [ ] All TODOs in `Lab3_1_JSObjects.js` are completed or attempted.
-- [ ] Your code runs without syntax errors.
-- [ ] You used both **dot** and **bracket** notation at least once.
-- [ ] You used `in`, `delete`, and at least one of `Object.keys`, `Object.values`, or `for...in`.
-- [ ] All required worksheets in the `worksheets/` folder are completed.
-- [ ] Exit ticket questions are answered.
-
+## 🧠 Review
+- Quizlet: (teacher will share link)

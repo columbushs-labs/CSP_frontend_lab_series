@@ -1,116 +1,87 @@
-# 3.1 JS Objects – Worksheet
-## Guided Practice
+# Guided Practice – JS Objects (Lab 3.1)
 
-### Part 1 – Reading Object Literals
+## 1) Predict the Output (Don’t Run Yet)
 
-1.
+A.
 ```js
-let olympicRecords = {
-  athletics100Men: "Usain Bolt",
-  athleticsLongJumpMen: "Mike Powel"
-};
+const car = { make: "Honda", year: 1998 };
+console.log(car.make);
+console.log(car["year"]);
+```
+Prediction:
+- Line 2: ________
+- Line 3: ________
+
+B.
+```js
+const obj = { a: 1 };
+const key = "a";
+console.log(obj[key]);
+console.log(obj.key);
+```
+Prediction:
+- Line 3: ________
+- Line 4: ________
+Why are they different? ______________________________________
+
+---
+
+## 2) Fix the Bug
+
+```js
+const student = { name: "Leo", grade: 10 };
+const field = grade;
+console.log(student[field]);
 ```
 
-In your own words, explain what this object represents and what each part is:
+1. What error will happen? ___________________________________
+2. Fix it (rewrite only the broken part):
 
-
-2.
 ```js
-let student = {
-  firstName: "Ana",
-  lastName: "Lopez",
-  id: 7
-};
-console.log(student.firstName);
+const field = ______________________;
 ```
 
-What will be printed and why?
+---
 
+## 3) Add / Update / Delete (Write the Code)
 
-3.
+Start:
 ```js
-let car = {
-  make: "Honda",
-  model: "Accord",
-  year: 1998
-};
-console.log(car["model"]);
+const profile = { username: "skyblue", followers: 12 };
 ```
 
-What will be printed and why is bracket notation allowed here?
+A) Add a new key `verified` with value `false` using dot OR brackets:
+```js
+______________________________________________________________
+```
 
+B) Update followers to 13:
+```js
+______________________________________________________________
+```
 
-### Part 2 – Dot vs Bracket Notation
+C) Delete the key `verified`:
+```js
+______________________________________________________________
+```
+
+---
+
+## 4) Mini Trace – for...in
 
 Given:
-
 ```js
-let user = {
-  name: "Nick",
-  "favorite sport": "skateboarding"
-};
+const scores = { a: 10, b: 20 };
+for (let k in scores) {
+  console.log(k);
+}
 ```
 
-4. Write one line that logs the `name` using **dot notation**.
+What prints (in order)?  
+1) ________  
+2) ________  
 
-5. Write one line that logs `"favorite sport"` using **bracket notation**.
-
-6. Why can’t we write `user.favorite sport`? Explain in a sentence.
-
-
-### Part 3 – Adding and Updating Properties
-
-7.
+What would you add to print the values too? (one line):
 ```js
-let olympicRecords = {
-  athletics100Men: "Justin Gatlin"
-};
-olympicRecords.athletics100Men = "Usain Bolt";
-console.log(olympicRecords.athletics100Men);
+______________________________________________________________
 ```
-
-What will be printed and why?
-
-
-8.
-```js
-let olympicRecords = {
-  athletics100Men: "Usain Bolt"
-};
-olympicRecords.swimming200Men = "Michael Phelps";
-console.log(olympicRecords);
-```
-
-What new property was added and what is its value?
-
-
-### Part 4 – The in Operator and delete
-
-9.
-```js
-let myCar = {
-  make: "Honda",
-  model: "Accord",
-  year: 1998
-};
-
-console.log("make" in myCar);
-console.log("color" in myCar);
-```
-
-What will each `console.log` print?
-
-
-10.
-```js
-let olympicRecords = {
-  athletics100Men: "Usain Bolt",
-  doubleOllie: "Chris Chann"
-};
-
-delete olympicRecords.doubleOllie;
-console.log(olympicRecords);
-```
-
-What does `delete` do in this example?
-

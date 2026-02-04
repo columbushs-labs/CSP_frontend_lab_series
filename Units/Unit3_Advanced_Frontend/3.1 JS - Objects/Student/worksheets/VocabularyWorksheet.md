@@ -1,41 +1,43 @@
-# 3.1 JS Objects – Worksheet
-## Vocabulary
+# Vocabulary Worksheet – JS Objects (Lab 3.1)
 
-Write a short definition in your own words and add an example if possible.
+Fill in the definition and give a quick example.
 
-1. Object
+1) **Object**  
+Definition: ________________________________________________  
+Example: `_________________________________________________`
 
+2) **Key**  
+Definition: ________________________________________________  
+Example key: `________________`
 
-2. Key–value pair
+3) **Value**  
+Definition: ________________________________________________  
+Example value: `________________`
 
+4) **Key‑Value Pair**  
+Definition: ________________________________________________  
+Example: `________________ : ________________`
 
-3. Property (of an object)
+5) **Dot Notation**  
+When to use it: ____________________________________________  
+Example: `_________________________________________________`
 
+6) **Bracket Notation**  
+When you must use it: ______________________________________  
+Example: `_________________________________________________`
 
-4. Object literal
+7) **Property**  
+Definition: ________________________________________________  
+Example: `_________________________________________________`
 
+8) **in operator**  
+What it checks: ____________________________________________  
+Example: `_________________________________________________`
 
-5. Dot notation
+9) **delete operator**  
+What it does: ______________________________________________  
+Example: `_________________________________________________`
 
-
-6. Bracket notation
-
-
-7. `in` operator
-
-
-8. `delete` operator
-
-
-9. `Object.keys()`
-
-
-10. `Object.values()`
-
-
-11. `for...in` loop
-
-
-12. Mutability (for objects)
-
-
+10) **Object.keys / Object.values**  
+What they return: __________________________________________  
+Example: `_________________________________________________`
